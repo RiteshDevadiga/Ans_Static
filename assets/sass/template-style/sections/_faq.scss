@@ -1,0 +1,184 @@
+.faq-section{
+    .faq-heading{
+        margin-bottom: rem(29px);
+        .faq-icon{
+            position: relative;
+            top: rem(6px);
+            margin-right: rem(15px);
+            i{
+                line-height: rem(42px);
+                color: $variation-color1;
+                &:before{
+                    font-size: rem(42px);
+                }
+            }
+            &.icon-item1{
+                i{
+                    color: $variation-color3;
+                }
+            }
+            &.icon-item2{
+                i{
+                    color: $variation-color1;
+                }
+            }
+            &.icon-item3{
+                i{
+                    color: $variation-color4;
+                }
+            }
+            &.icon-item4{
+                margin-right: rem(13px);
+            }
+            &.icon-item5{
+                i{
+                    color: $variation-color2;
+                }
+            }
+        }
+        .faq-title{
+            h3{
+                font-weight: 700;
+                margin-bottom: 0;
+                font-size: rem(22px);
+            }
+            p{
+                margin-bottom: 0;
+                line-height: rem(20px);
+            }
+        }
+    }
+    .faq-tab{
+        .nav-tabs{
+            border-bottom: none;
+            .nav-item{
+                margin-bottom: rem(18px);
+            }
+            .nav-link{
+                border: none;
+                box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.05);
+                border-radius: 0;
+                background-color: transparent;
+                color: $body-color;
+                padding: 23px 28px 1px 28px;
+                p{
+                    margin-bottom: 0;
+                }
+                &.active{
+                    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.12);
+                    background-color: #fff;
+                }
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+                }
+            }
+        }
+    }
+    .faq-tabs{
+        margin-bottom: rem(29px);
+        .faq-icon{
+            margin-top: rem(6px);
+            margin-right: rem(13px);
+            i{
+                line-height: rem(27px);
+                color: $variation-color1;
+                &:before{
+                    font-size: rem(27px);
+                }
+            }
+            &.icon-item1{
+                i{
+                    color: $variation-color3;
+                }
+            }
+            &.icon-item2{
+                margin-right: rem(9px);
+                margin-left: rem(-4px);
+                i{
+                    line-height: rem(35px);
+                    color: $variation-color1;
+                    &:before{
+                        font-size: rem(35px);
+                    }
+                }
+            }
+            &.icon-item3{
+                i{
+                    color: $variation-color4;
+                }
+            }
+            &.icon-item5{
+                i{
+                    color: $variation-color2;
+                }
+            }
+        }
+        .faq-title{
+            h3{
+                font-weight: 600;
+                margin-bottom: rem(3px);
+                font-size: rem(18px);
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .panel-group{
+        .panel{
+            border-radius: 0;
+            margin-bottom: rem(30px);
+            border: 1px solid #d3d3d3;
+            .panel-heading{
+                border: none;
+                border-radius: 0;
+                padding: rem(16px 60px 16px 32px);
+                position: relative;
+                .faq-num{
+                    color: #fff;
+                    height: 100%;
+                    top: 0px;
+                    left: 0px;
+                    width: rem(47px);
+                    line-height: rem(24px);
+                    position: absolute;
+                    background: transparent;
+                    padding: rem(10px 0);
+                    text-align: center;
+                    font-family: $title-font;
+                    font-weight: 600;
+                }
+                .panel-title{
+                    margin-bottom: 0;              
+                    a{
+                        font-weight: 600;                        
+                        color: $title-color;
+                        font-size: rem(18px);
+                        display: block;
+                        &:after{
+                            font-family: Flaticon;
+                            content: "\f12e";
+                            position: absolute;
+                            left: auto;
+                            right: 3.5rem;
+                            font-size: rem(22px);
+                            top: rem(14px);
+                            color: #888888;
+                            z-index: 1;
+                        }
+                        &.expanded{
+                            &:after{
+                                content: "\f12f";
+                            }
+                        }
+                    }
+                } 
+            }
+            .panel-body{
+                position: relative;
+                padding: rem(10px 64px 45px 32px);
+            }
+        }
+    }
+}

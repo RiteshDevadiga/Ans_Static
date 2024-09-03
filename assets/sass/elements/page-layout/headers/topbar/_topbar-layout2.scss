@@ -1,0 +1,45 @@
+.topbar-layout2 {
+    .topbar-info{
+        padding: rem(24px) 0;
+        .contact-info{
+            display: flex;
+            padding-right: rem(65px);        
+            .contact-icon{
+                i{
+                    font-size: rem(30px);
+                    height: rem(30px);
+                    color: $primary-color;
+                    &:before{
+                        font-size: rem(31px);
+                    }
+                }
+            }
+            .contact-text{
+                padding-left: 1.5rem;
+                &:last-child{
+                    padding-right: 0;
+                }
+                .contact-title{
+                    font-weight: 700;
+                    font-size: rem(15px);
+                    color: $title-color;
+                    line-height: rem(20px);
+                }
+                .text{
+                    font-size: 1.5rem;
+                    color: $title-color;
+                    a{
+                        color: $title-color;                        
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sign-btn{
+        width: 100%;
+        text-align: right    
+    }
+}

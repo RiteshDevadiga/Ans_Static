@@ -1,0 +1,151 @@
+.work-process-section{
+    &.process-style2{
+        padding-top: rem(60px);
+    }
+    .process-item{
+        box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.07);
+        padding: rem(75px 41px 50px);
+        margin-bottom: rem(30px);
+        .icon{
+            width: rem(112px);
+            height: rem(110px);
+            margin: 0 auto;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                right: -90%;
+                top: rem(13px);
+                display: block;
+                width: rem(114px);
+                height: rem(24px);
+                background: url(../../media/background/shape3.png) no-repeat center center;
+                border-radius: 100%;
+                z-index: 1;
+            }
+            i{
+                position: relative;
+                z-index: 9;            
+                &:before{
+                    font-size: rem(45px);
+                    padding: rem(32px);
+                    background: #fff;
+                    color: $primary-color;
+                    border-radius: 100%;
+                    box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.02);
+                    transition: $transition;
+                    z-index: 9;
+                }
+            }
+        }
+        .item-title{
+            margin-top: 0;
+            margin-bottom: rem(10px);
+            font-weight: 600;
+            font-size: rem(22px);
+            a{
+                color: $title-color;
+                &:hover{
+                    color: $primary-color;
+                    text-decoration: none;
+                    &:before{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .process-item{
+            margin-bottom: rem(30px);
+            &:hover{
+                .icon{
+                    i{                        
+                        &:before{
+                            background: $primary-color;
+                            color: #fff;
+                        }
+                    }
+                }
+            }            
+        }
+        &.process-one{
+            .icon{
+                i{           
+                    &:before{
+                        color: #00ebac;
+                    }
+                }
+            }            
+        }
+        &.process-two{
+            .icon{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -88%;
+                    top: rem(68px);
+                    display: block;
+                    width: rem(117px);
+                    height: rem(24px);
+                    background: url(../../media/background/shape4.png) no-repeat center center;
+                    border-radius: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+        &.process-three{
+            .icon{
+                i{           
+                    &:before{
+                        color: $variation-color4;
+                    }
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -90%;
+                    top: rem(60px);
+                    display: block;
+                    width: rem(117px);
+                    height: rem(24px);
+                    background: url(../../media/background/shape4.png) no-repeat center center;
+                    border-radius: 100%;
+                    z-index: 1;
+                }
+                &:after{
+                    display: none;
+                }
+            }            
+        }
+        &:hover{
+            &.process-one{
+                .icon{
+                    i{           
+                        &:before{
+                            background: #00ebac;
+                        }
+                    }
+                }            
+            }
+            &.process-three{
+                .icon{
+                    i{           
+                        &:before{
+                            background: $variation-color4;
+                        }
+                    }
+                }            
+            }
+            .icon{
+                i{           
+                    &:before{
+                        color: #fff;
+                        background: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

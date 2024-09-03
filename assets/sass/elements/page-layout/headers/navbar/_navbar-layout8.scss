@@ -1,0 +1,37 @@
+.header {
+    &.header-layout8{
+        .sign-btn{
+            a{
+                border-color: #577590;
+            }
+        }
+        .main-menu-area {
+            .two-icons {
+                li.search {
+                    .seach_bar {
+                        i{
+                            color: #7288d8;
+                        }
+                    }
+                }
+            }
+            &.sticky{
+                background: #092d4c;
+                .two-icons {
+                    li.search {
+                        .seach_bar {
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .sign-btn{
+                    a{
+                        border-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

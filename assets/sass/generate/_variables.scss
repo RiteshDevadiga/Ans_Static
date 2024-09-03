@@ -1,0 +1,123 @@
+/*--imported fonts--*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800&display=swap');
+
+//Fonts
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$title-font: 'Poppins', sans-serif;
+
+//Theme Colors
+$primary-color: #ff2c54;
+$secondary-color: #2554E1;
+$body-color: #666666;
+$title-color: #333333;
+$link-color: #2b2b2b;
+$yellow-color: #f7c80a;
+$green-color: #00ca90;
+$blue-color: #1ec1df;
+$blue-color2: #143c5e;
+$variation-color1: #00ebac;
+$variation-color2: #8053ca;
+$variation-color3: #ff930e;
+$variation-color4: #4f6def;
+$variation-color5: #25de73;
+
+//Font weight
+$p-light: 300;
+$p-regular: 400;
+$p-medium: 500;
+$p-semi-bold: 600;
+$p-bold: 700;
+$p-extra-bold: 800;
+$p-black: 900;
+
+//Shadows
+$shadow-light: 0 2px 16px 0 rgba(0, 0, 0, 0.05);
+$shadow-light2: 0 2px 16px 0 rgba(0, 0, 0, 0.06);
+$shadow-dark: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+
+//Transition
+$transition: all 0.4s ease 0s;
+
+//Gradient Color
+$gradient-color: linear-gradient(to right, #eea303 0%, #28aadc 100%); 
+
+$section_padding_base_md: 120px;
+$section_padding_base_xs: ($section_padding_base_md - 60px);
+$section_padding_base_sm: ($section_padding_base_md - 30px);
+$section_padding_base_lg: ($section_padding_base_md + 30px);
+$section_padding_skew_md: ($section_padding_base_md + 30px);
+$section_padding_base_xl: ($section_padding_base_md + 60px);
+$section_padding_line_height: 12px;
+$section_padding_line_height_bottom: 8px;
+
+$section_padding_xs_top: ($section_padding_base_xs - $section_padding_line_height);
+$section_padding_xs_bottom: ($section_padding_base_xs - 30px);
+$section_padding_sm_top: ($section_padding_base_sm - $section_padding_line_height);
+$section_padding_sm_bottom: ($section_padding_base_sm - 30px);
+$section_padding_md_top: ($section_padding_base_md - $section_padding_line_height);
+$section_padding_top: ($section_padding_base_md - $section_padding_line_height_bottom);
+$section_padding_bottom: ($section_padding_base_md - $section_padding_line_height_bottom);
+$section_padding_top2: ($section_padding_base_md - 9px);
+$section_padding_bottom_md: ($section_padding_base_md - $section_padding_line_height);
+$section_padding_md_bottom: ($section_padding_base_md - 30px);
+$section_padding_lg_top: ($section_padding_base_lg - $section_padding_line_height);
+$section_padding_lg_bottom: ($section_padding_base_lg - 30px);
+$section_padding_xl_top: ($section_padding_base_xl - $section_padding_line_height);
+$section_padding_xl_bottom: ($section_padding_base_xl - 30px);
+
+$section_padding_xs_equal_top: $section_padding_base_xs;
+$section_padding_xs_equal_bottom: ($section_padding_base_xs - 30px);
+$section_padding_sm_equal_top: $section_padding_base_sm;
+$section_padding_sm_equal_bottom: ($section_padding_base_sm - 30px);
+$section_padding_md_equal_top: $section_padding_base_md;
+$section_padding_md_equal_bottom: ($section_padding_base_md - 30px);
+$section_padding_lg_equal_top: $section_padding_base_lg;
+$section_padding_lg_equal_bottom: ($section_padding_base_lg - 30px);
+$section_padding_xl_equal_top: $section_padding_base_xl;
+$section_padding_xl_equal_bottom: ($section_padding_base_xl - 30px);
+
+$section2_padding_base_md: 120px;
+$section2_padding_base_xs: ($section2_padding_base_md - 60px);
+$section2_padding_base_sm: ($section2_padding_base_md - 30px);
+$section2_padding_base_lg: ($section2_padding_base_md + 30px);
+$section2_padding_base_xl: ($section2_padding_base_md + 60px);
+$section2_padding_line_height: 12px;
+
+$section2_padding_xs_top: ($section2_padding_base_xs - $section2_padding_line_height);
+$section2_padding_xs_bottom: ($section2_padding_base_xs - 30px);
+$section2_padding_sm_top: ($section2_padding_base_sm - $section2_padding_line_height);
+$section2_padding_sm_bottom: ($section2_padding_base_sm - 30px);
+$section2_padding_md_top: ($section2_padding_base_md - $section2_padding_line_height);
+$section2_padding_md_bottom: ($section2_padding_base_md - 30px);
+$section2_padding_lg_top: ($section2_padding_base_lg - $section2_padding_line_height);
+$section2_padding_lg_bottom: ($section2_padding_base_lg - 30px);
+$section2_padding_xl_top: ($section2_padding_base_xl - $section2_padding_line_height);
+$section2_padding_xl_bottom: ($section2_padding_base_xl - 30px);
+
+$section2_padding_xs_equal_top: $section2_padding_base_xs;
+$section2_padding_xs_equal_bottom: ($section2_padding_base_xs - 30px);
+$section2_padding_sm_equal_top: $section2_padding_base_sm;
+$section2_padding_sm_equal_bottom: ($section2_padding_base_sm - 30px);
+$section2_padding_md_equal_top: $section2_padding_base_md;
+$section2_padding_md_equal_bottom: ($section2_padding_base_md - 30px);
+$section2_padding_lg_equal_top: $section2_padding_base_lg;
+$section2_padding_lg_equal_bottom: ($section2_padding_base_lg - 30px);
+$section2_padding_xl_equal_top: $section2_padding_base_xl;
+$section2_padding_xl_equal_bottom: ($section2_padding_base_xl - 30px);
+
+$section_padding_bottom_md2: 114px;
+
+$btn_font_size: 18px;
+
+$btn_height_xs: 4px;
+$btn_height_sm: 6px;
+$btn_height_md: 8px;
+$btn_height_lg: 10px;
+$btn_height_xl: 12px;
+
+$btn_width_xs: 15px;
+$btn_width_sm: 20px;
+$btn_width_md: 25px;
+$btn_width_lg: 30px;
+$btn_width_xl: 35px;

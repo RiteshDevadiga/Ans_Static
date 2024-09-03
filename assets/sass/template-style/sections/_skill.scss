@@ -1,0 +1,77 @@
+.skill-section{
+    padding-bottom: rem(86px);
+    .section-title{
+        max-width: 45rem;
+        .title{
+            margin-bottom: 2rem;
+        }
+    }
+    .skill-area{
+        max-width: rem(554px);
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .skill-type{
+        padding-top: 1.6rem;               
+        .skill-item{            
+            .skill-icon{
+                box-shadow: 0 0 2rem rgba(0, 0, 0, 0.09);
+                background: #fff;
+                border-radius: 100%;
+                width: 8.5rem;
+                height: 8.5rem;
+                line-height: 8.5rem;
+                text-align: center;
+                float: left;
+                transition: $transition;
+                margin-top: 1rem;
+                i{
+                    &:before{
+                        font-size: 3.5rem;
+                    }
+                }
+                &.icon-one{
+                    color: #00ebac;
+                }
+                &.icon-two{
+                    color: $primary-color;
+                }
+                &.icon-three{
+                    color: $variation-color4;
+                }
+            }
+            .short-desc{
+                float: left;
+                width: calc(100% - 8.5rem);
+                padding-left: 2rem;
+                padding-bottom: .4rem;
+                padding-right: 1rem;
+                .skill-title{
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    color: $title-color;
+                    font-family: $title-font;
+                    margin-bottom: .8rem;     
+                }
+            }
+            &:hover{
+                .skill-icon{
+                    background: $primary-color;
+                    color: #fff;
+                    &.icon-one{
+                        background: #00ebac;
+                        color: #fff;
+                    }
+                    &.icon-two{
+                        background: $primary-color;
+                        color: #fff;
+                    }
+                    &.icon-three{
+                        background: $variation-color4;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

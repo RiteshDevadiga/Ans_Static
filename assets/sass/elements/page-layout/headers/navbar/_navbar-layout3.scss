@@ -1,0 +1,29 @@
+.header {
+    &.header-layout3{
+        .main-menu-area {
+            &.sticky{
+                background: linear-gradient(135deg, #2cbe4e, #0eac85);
+            }
+            .two-icons {
+                li.search {
+                    .seach_bar {
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .two-icons {
+                li{
+                    &.sign-btn {
+                        a{
+                            background: $primary-color;
+                            border-color: $primary-color;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,156 @@
+/*--------------------------------------
+    # Sidebar Style
+---------------------------------------*/
+
+.sidebar-area{
+    .widget{
+        margin-bottom: rem(47px);
+        &.bs-search{
+            margin-bottom: rem(52px);
+        }
+        &.bs-caterories{
+            margin-bottom: rem(36px);
+        }
+    }
+    .bs-widget-title {
+        font-size: rem(20px);
+        margin-bottom: rem(30px);
+        font-weight: 600;
+    }
+    .bs-caterories{
+        .bs-widget-title {
+            margin-bottom: rem(21px);
+        }
+    }
+    .bs-search {
+        overflow: hidden;
+        position: relative;
+        input {
+            border: none;
+            background: #f8f8f8;
+            color: $title-color;
+            padding: rem(15px  34px);
+            font-size: rem(18px);
+            width: 100%;
+            outline: none;
+        }
+        button {
+            background: transparent;
+            border: medium none;
+            color: #989898;
+            position: absolute;
+            right: rem(23px);
+            top: 0;
+            z-index: 9;
+            font-size: rem(16px);
+            outline: none;
+            width: rem(40px);
+            height: 100%;
+            cursor: pointer;
+            i{
+                font-size: rem(18px);
+            }
+        }
+    }
+    .bs-caterories {
+        ul {
+            li {
+                padding: rem(9px 0 9px 0);
+                a {
+                    color: $title-color;
+                    font-size: rem(16px);
+                    font-weight: 600;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                span {
+                    float: right;
+                }
+                &:first-child{
+                    border-top: none;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .bs-latest-post {
+        .post-item {
+            margin-bottom: rem(24px);
+            overflow: hidden;
+            .post-images{
+                float: left;
+                width: rem(80px);
+                margin-right: rem(20px);
+            }
+            .post-desc {
+                overflow: hidden;
+                .title {
+                    display: block;
+                    margin: 0 0 3px;
+                    font-size: rem(16px);
+                    font-weight: 600;
+                    color: $title-color;
+                    font-family: $title-font;
+                    transition: 0.4s;
+                    -webkit-transition: 0.4s;
+                    line-height: 1.6;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                span{
+                   display: block;
+                   font-size: rem(14px);
+                   color: $body-color;
+                   margin-bottom:  rem(5px);
+                }
+                i{
+                   color: #777777;
+                   font-size: 13px;
+                }
+                i.fa-star-o{
+                    color: $secondary-color;
+                }
+            }
+        }
+       
+    }
+    .bs-tags{
+        a {
+            display: inline-block;
+            margin: rem(0 5px 7px 0);
+            padding: rem(6.5px 22px);
+            font-size: rem(15px);
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            color: $title-color;
+            border: 1px solid #e3e3e3;
+            &:hover {
+                background-color: $primary-color;
+                border-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+    .sidebar-meta{
+      ul#meta-link{
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         display: block;
+         a{
+            display: block;
+            font-size: 14px;
+            padding: 0 0 10px;
+            margin: 0 0 10px;
+            border-bottom: 1px solid #e8e8e8;
+            color: $body-color;
+            transition: $transition;
+            &:hover{
+               color: $primary-color;
+            }
+         }
+      }
+    }
+}

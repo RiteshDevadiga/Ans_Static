@@ -1,0 +1,185 @@
+/*--- About Layout One ---*/
+.about-section{
+    .about-img{
+        padding-right: 2.6rem;
+    }
+    .about-desc{
+        padding-left: 2.6rem;
+    }
+    .about-btn{
+        margin-top: 5rem;
+        .arrow-link{
+            margin-left: 3.5rem;
+        }
+    }
+    &.about-us-8{
+        .about-img{
+            padding-right: 0;
+            img{
+                padding-left: rem(100px);
+            }
+        }
+        .arrow-link{
+            color: $primary-color;
+            &:before{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/*--- About Layout Two ---*/
+.about-us-two {
+    p{
+        margin-bottom: 3.2rem;
+    }
+    .about-img{
+        padding-right: 0;
+    }
+    .about-btn{
+        margin-top: 5rem;
+    }
+}
+
+/*--- About Layout Three ---*/
+.about-us-three {
+    margin-top: rem(-190px);
+    p{
+        margin-bottom: 3.2rem;
+    }
+    .about-img{
+        padding-right: 0;
+    }
+    .about-btn{
+        margin-top: 5rem;
+        .primary-btn{
+            min-width: 16rem;
+        }
+    }
+    .animated-img{
+        position: relative;
+        @media only screen and (max-width: 991px){
+            margin-bottom: rem(210px);
+        }
+        @media only screen and (max-width: 767px){
+            margin-bottom: rem(50px);
+        }
+        .about-left2{
+            position: absolute;
+            left: 20%;
+            top: 34%;
+             box-shadow: 0 0 6.2rem rgba(0, 0, 0, 0.09);
+            @media only screen and (max-width: 767px){
+                margin-bottom: rem(150px);
+                left: rem(40px);
+                top: rem(40px);
+            }
+        }
+    }
+}
+
+/*--- About Layout Four ---*/
+.about-us-four{
+    .left-desc{
+        background: #05113b;
+        color: #fff;        
+        padding-right: 0;
+        .left-wrap{
+            margin-right: 0;
+            padding-right: rem(135px);
+            height: 100%;
+            padding-top: rem(110px);
+            padding-bottom: rem(120px);
+            .title-style2{
+                .sub-title{
+                    color: #aaaebd;
+                }
+                .title{
+                    color: #fff;
+                }
+            }
+            .more-btn{
+                margin-top: rem(50px);
+            }
+        }        
+    }    
+    .play-video{
+        background: url(../../media/background/video-bg.jpg) no-repeat center center;
+        height: 640px;
+        background-size: cover;
+        height: 100%;
+        .play-icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            z-index: 99;
+            .popup-video{
+                position: relative;
+                left: rem(-45px);
+                top: rem(-45px);
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: block;
+                    width: rem(120px);
+                    height: rem(120px);
+                    background: #fffcfc;
+                    border-radius: 100%;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: rem(41px);
+                    top: rem(38px);
+                    display: block;
+                    width: rem(40px);
+                    height: rem(40px);
+                    background: url(../../media/icons/play.png) no-repeat center center;
+                    border-radius: 100%;
+                    z-index: 9;
+                }
+                &:hover{
+                    &:after{
+                        background: #eaeaea;
+                    }
+                }
+            }
+        }
+    }
+    &.landing{
+        .left-desc{
+            background: url(../../media/about/about-landing.png) no-repeat center center;
+            background-size: cover;
+            .left-wrap{
+                padding-top: rem(165px);
+                padding-bottom: rem(140px);
+            }           
+        }
+        .play-video{
+            background: url(../../media/about/about-video-bg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+.has-animation{
+    .image-shape{
+        &:before{
+            transform: translateX(10%);
+            opacity: 0;
+            transition: all 2.5s ease-in-out;
+            transition-duration: 1s;
+        }
+    }
+    &.active-animation{
+        .image-shape{
+            &:before{
+                opacity: 1;
+                transform: translateZ(0);
+            }
+        }
+    }   
+}

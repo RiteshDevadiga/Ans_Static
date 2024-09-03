@@ -1,0 +1,60 @@
+.header {
+    &.header-layout6{
+        .main-menu-area{
+            position: static;
+            padding: rem(20.5px 0);
+            &.sticky{
+                background: #05113b;
+            }
+            .logo{
+                .sticky-logo{
+                    display: none;
+                }
+            }
+            .header-contact{
+                display: inline-block;
+                padding-right: rem(92px);
+                .icon{
+                    padding-right: rem(10px);
+                    i{
+                        &:before{
+                            font-size: rem(25px);
+                            color: $primary-color;
+                        }
+                    }
+                }
+                a{
+                    font-size: rem(24px);
+                    font-weight: 700;
+                    color: $title-color;
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+            .nav_trigger{
+                i{
+                    &:before{
+                        font-size: rem(18px);
+                        color: #6c6b6b;
+                        background: #eaeaea;
+                        border-radius: 100%;
+                        padding: rem(11px);
+                        transition: $transition;
+                    }
+                }
+                &:hover{
+                    i{
+                        &:before{
+                            color: #fff;
+                            background: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .logo{
+            margin-top: 0;
+        }
+    }   
+}

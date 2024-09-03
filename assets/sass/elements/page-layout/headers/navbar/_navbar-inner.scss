@@ -1,0 +1,120 @@
+.header {
+    &.header-inner{
+        .header-bottom {
+            .mainmenu {
+                .nav-menu {
+                    li{
+                        &.current_page_item {
+                            > a{
+                                color: #fff;
+                                position: relative;
+                                &:after{
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    width: rem(30px);
+                                    height: rem(2px);
+                                    background: #fff;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    bottom: rem(26px);
+                                }
+                            }
+                        }
+                    }
+                }
+                ul {
+                    > li {
+                        > a{
+                            position: relative;
+                            &:after{
+                                position: absolute;
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: rem(2px);
+                                background: #fff;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: rem(26px);
+                                transition: $transition;
+                            }
+                            &:hover{
+                                color: #fff;
+                                &:after{
+                                    width: rem(30px);
+                                }
+                            }
+                        }
+                        .sub-menu{
+                            li{
+                                a{
+                                    &:after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-menu-area {
+            .two-icons {
+                li.sign-btn {
+                    a{
+                        border-color: #5a6ad2;
+                        &:hover{
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .sticky{
+            .header-bottom {
+                .mainmenu {
+                    .nav-menu {
+                        li{
+                            &.current_page_item {
+                                > a{
+                                    color: #fff;
+                                    position: relative;
+                                    &:after{
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        > li {
+                            > a{
+                                position: relative;
+                                &:after{
+                                    bottom: 0;
+                                }
+                                &:hover{
+                                    &:after{
+                                        width: rem(30px);
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .two-icons {
+                li.sign-btn {
+                    a{
+                        border-color: #fff;
+                        &:hover{
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

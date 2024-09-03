@@ -1,1 +1,0 @@
-# Ans_Static

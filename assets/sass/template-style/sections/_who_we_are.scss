@@ -1,0 +1,242 @@
+.who-are-section{
+    .polygon-clip-hexagon {
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: $yellow-color;
+        width: 8rem;
+        height: 9rem;
+        line-height: rem(110px);
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about-btn{
+        margin-bottom: 5rem;
+    }
+    .service-wrap{
+        padding: 6rem 2.7rem 5.2rem;
+        width: 100%;
+        border: .1rem solid #f7f7f7;
+        border-top-color: rgb(247, 247, 247);
+        border-top-style: solid;
+        border-top-width: 0.1rem;
+        background: #fff;
+        border-top: none;
+        border-radius: 0;
+        box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.06);
+        transition: all 0.4s ease 0s;
+        margin-bottom: 3rem;
+        .icon-wrap{
+            -webkit-filter: drop-shadow(0px 10px 0px rgba($yellow-color, 0.15));
+            filter: drop-shadow(0px 10px 0px rgba($yellow-color, 0.15));
+            .service-icon-svg{
+                max-width: rem(90px);
+                position: relative;
+                margin: 0 auto;
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    &:before{
+                        font-size: rem(40px);
+                    }
+                }
+            }
+            .cls-1{
+                fill: $yellow-color;
+                fill-rule: evenodd;
+            }
+            .cls-2{
+                fill: $primary-color;
+                fill-rule: evenodd;
+            }
+            .cls-3{
+                fill: $green-color;
+                fill-rule: evenodd;
+            }
+            .cls-4{
+                fill: $blue-color;
+                fill-rule: evenodd;
+            }
+        }
+        &.first-service{                
+            .service-icon{
+                background: $yellow-color;
+            }
+        }
+        &.second-service{
+            margin-top: 12.5rem;
+            .icon-wrap{
+                -webkit-filter: drop-shadow(0px 10px 0px rgba($primary-color, 0.15));
+                filter: drop-shadow(0px 10px 0px rgba($primary-color, 0.15));
+            }
+            .service-icon{
+                background: $primary-color;
+            }
+        }
+        &.third-service{
+            margin-top: -12.5rem;
+            .icon-wrap{
+                -webkit-filter: drop-shadow(0px 10px 0px rgba($green-color, 0.15));
+                filter: drop-shadow(0px 10px 0px rgba($green-color, 0.15));
+            }
+            .service-icon{
+                background: $green-color;
+            }
+        }
+        &.fourth-service{
+            .icon-wrap{
+                -webkit-filter: drop-shadow(0px 10px 0px rgba($blue-color, 0.15));
+                filter: drop-shadow(0px 10px 0px rgba($blue-color, 0.15));
+            }
+            .service-icon{
+                background: $blue-color;
+            }
+        }
+        .service-icon{
+            i{
+                color: #fff;
+                font-size: 3.5rem;
+            }
+        }
+        .service-title{
+            margin-bottom: 1.5rem;
+            margin-top: 2.2rem;
+            font-size: rem(24px);
+            font-family: $primary-font;
+            font-weight: 700;
+            a{
+                color: $title-color;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+        .service-desc{
+            margin-bottom: 0;
+        }
+        .read-more{
+            color: $title-color;
+            &:before{
+                color: $title-color;
+            }
+            &:hover{
+                color: $primary-color;
+                text-decoration: none;
+                &:before{
+                    color: $primary-color;
+                }
+            }
+        }
+        &:hover{
+            .read-more{
+                color: $primary-color;
+                text-decoration: none;
+                &:before{
+                    color: $primary-color;
+                    right: -3rem;
+                }
+            }
+        }
+    }
+}
+
+.what-we-do{
+    &.landing-ticket{
+        padding-top: 0;
+    }
+    &.sec6-space120{        
+        padding-bottom: rem(100px);
+    }
+    .service-wrap{    
+        -webkit-box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.15);
+        border-radius: rem(20px);
+        margin-bottom: rem(20px);
+        img{
+            border-radius: rem(20px);
+        }
+        &.first-service{
+            margin-top: rem(53px);
+        }
+        &.fourth-service{
+            box-shadow: 0px 13px 2.2rem rgba(0, 0, 0, 0.1);
+            margin-top: rem(-100px);
+        }
+    }
+    .pdf-btn{
+        .btn-wrap{
+            display: flex;
+            justify-content: left;
+            background: $primary-color;
+            box-shadow: 0px 6px 2.2rem rgba(0, 0, 0, 0.1);
+            padding: rem(32px) rem(32px);
+            border-radius: rem(12px);
+            margin-bottom: rem(18px);
+            transition: $transition;
+            cursor: pointer;
+            .pdf-icon{
+                i{
+                    font-size: rem(32px);
+                    color: #fff;
+                    margin-top: rem(12px);
+                    transition: $transition;
+                }
+            }
+            .btn-text{
+                padding-left: rem(15px);
+                position: relative;
+                padding-right: rem(15px);
+                color: #fff;
+                &:after{
+                    font-family: FontAwesome;
+                    content: "\f142";
+                    position: absolute;
+                    right: 0;
+                    font-size: rem(15px);
+                    top: rem(12px);
+                    color: #cad4db;
+                    display: block;
+                    transition: $transition;
+                }
+                .pdf-title{
+                    margin-bottom: 0;
+                    font-size: rem(15px);
+                    transition: $transition;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: rem(11px);
+                    line-height: rem(15px);
+                }
+            }
+            &:hover{
+                background: $primary-color;
+                -webkit-box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.15);
+                color: #fff;
+                .btn-text::after{
+                    color: #fff;
+                }
+                .pdf-icon{
+                    i{
+                        color: #fff;
+                    }
+                }
+                .pdf-title{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .section-title{
+        &.title-style2 {
+            .title{
+                margin-bottom: rem(20px);
+            }
+        }
+    }
+}

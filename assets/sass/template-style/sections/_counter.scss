@@ -1,0 +1,139 @@
+.counter-section{
+    background: linear-gradient(60deg, #3069f3, #122abe);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    .left-shape{
+        position: absolute;
+        width: rem(385px);
+        height: rem(78px);
+        background: url(../../media/shape/client-left.png) no-repeat center top;
+        background-size: cover;
+        left: 0;
+        top: 40%;
+        transform: translateY(-60%);
+        transition: all 2s ease-in-out;
+        transition-delay: 1s;
+        @media only screen and (max-width: 480px) {
+            width: rem(250px);
+            height: rem(51px);
+        }
+    }
+    .right-shape{
+        position: absolute;
+        width: rem(267px);
+        height: rem(72px);
+        background: url(../../media/shape/client-right.png) no-repeat center top;
+        background-size: cover;
+        right: rem(95px);
+        top: 60%;
+        transform: translateY(-40%);
+        transition: all 2s ease-in-out;
+        transition-delay: 1s;
+    }
+    &.counter-landing{
+        background: url(../../media/background/landing-counter.jpg) no-repeat center top;
+        background-size: cover;
+    }
+    .section-title {
+        &.center-style {
+            p{
+                margin-bottom: 4rem;
+            }
+        }
+        .title{
+            color: #fff;
+        }
+    }
+    .count-number{
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 5rem;
+    }
+    .count-title{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    &.counter-style2{
+        background: url(../../media/background/map.png) no-repeat center top 30px, linear-gradient(135deg, #3069f3, #122abe);
+    }
+    &.layout4 {
+        background: url(../../media/background/counter_bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+.counter-area{
+    padding-top: $section_padding_bottom_md;
+    .counter-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .counter-icon{
+            height: 90px;
+            line-height: 90px;
+            i{
+                color: #e1e1e1;
+                &:before{
+                    font-size: rem(90px);
+                }
+            }
+        }
+        .counter-text{
+            padding-left: rem(25px);
+            .count-number{
+                font-size: rem(60px);
+                font-weight: 600;
+                color: $primary-color;
+                font-family: $title-font;
+                line-height: rem(70px);
+            }
+            .count-title{
+                font-size: rem(22px);
+                font-weight: 600;
+                color: $title-color;
+                font-family: $title-font;
+            }
+        }
+    }
+}
+.section-counter-area{
+    .counter-bg{
+        background: url(../../media/background/counter-bg2.jpg) no-repeat center center;
+        background-size: cover;
+        height: rem(400px);
+    }    
+    .counter-wrap{
+        box-shadow: 0 0 6.2rem rgba(0, 0, 0, 0.09);
+        padding: rem(80px 20px 78px);
+        background: #fff;
+        border-radius: rem(5px);      
+        .counter-icon{
+            height: rem(90px);
+            line-height: rem(90px);
+            margin-bottom: rem(30px);
+            i{
+                color: $primary-color;
+                &:before{
+                    font-size: rem(80px);
+                }
+            }
+        }
+        .counter-text{
+            .count-number{
+                font-size: rem(50px);
+                font-weight: 600;
+                color: $title-color;
+                font-family: $title-font;
+                line-height: rem(68px);
+            }
+            .count-title{
+                font-size: rem(22px);
+                font-weight: 600;
+                color: $title-color;
+            }
+        }
+    }
+}
+.counter-wrap.text-center.aos-init.aos-animate {
+   margin-top: 22px;
+}

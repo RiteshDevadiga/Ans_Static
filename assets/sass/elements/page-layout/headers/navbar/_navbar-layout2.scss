@@ -1,0 +1,148 @@
+.header {
+    &.header-layout2{
+        .em-menu-toggle{
+            border-color: $title-color;
+            color: $title-color !important;
+        }
+        .menu-toggle {
+            .menu-icon {
+                .menu-line{
+                    background-color: $title-color;
+                }
+            }
+        }
+        .logo{
+            .sticky-logo{
+                display: none;
+            }
+        }
+        .header-bottom{
+            .mainmenu{
+                float: none;
+                .nav-menu{
+                    > li{
+                        &.current_page_item{
+                            > a{
+                                color: $primary-color;
+                            }
+                        }
+                        > a{
+                            color: $title-color;
+                        }
+                        a{
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-menu-area {
+            .two-icons {
+                li.search {
+                    .seach_bar {
+                        i{
+                            color: #959696;
+                        }
+                    }
+                }
+                li.sign-btn {
+                    a{
+                        background: #fff;
+                        border-color: #fff;
+                        color: $title-color;
+                        &:hover{
+                            color: #fff;
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+            }
+            &.sticky{
+                background: #fff;
+                .two-icons {
+                    li.sign-btn {
+                        a{
+                            background: $primary-color;
+                            border-color: $primary-color;
+                            color: #fff;
+                        }
+                    }
+                }
+                .header-bottom {
+                    .mainmenu {
+                        .nav-menu {
+                            > li {
+                                > a{
+                                    color: $title-color;
+                                    &:hover{
+                                        color: $primary-color;
+                                    }
+                                }
+                                &.current_page_item {
+                                    > a{
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mobile-menu{
+            .mainmenu{
+                .em-menu{
+                    margin-top: 24px;
+                    float: none;
+                    li{
+                        display: block;
+                        margin-right: 0;
+                    }
+                    &.em-menu-close{
+                        margin-top: 0;
+                    }
+                    ul {
+                        background: darken($secondary-color, 5%);
+                        > li {
+                            > a{
+                                color: #fff;
+                                padding: rem(15px 25px);
+                                &:hover{
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                        li{
+                            a{
+                                &:hover{
+                                    color: $primary-color !important;
+                                }
+                            }
+                        }
+                        .sub-menu{
+                            li{
+                                border-bottom: rem(1px) solid rgba(255, 255, 255, 0.15);
+                                a{
+                                    padding-left: rem(50px);
+                                    &:hover{
+                                        color: $primary-color !important;
+                                    }
+                                }
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+                                &.active{
+                                    a{
+                                        color: $primary-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

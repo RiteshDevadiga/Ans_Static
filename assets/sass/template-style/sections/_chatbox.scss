@@ -1,0 +1,20 @@
+.chatbox-section{
+    .section-title{
+        &.title-style2{
+            .title{
+                margin-bottom: rem(15px);
+            }
+        }
+    }
+    .chatbox-area{
+        .style-check{
+            li{
+                padding-left: rem(28px);
+                &:before{
+                    font-size: rem(18px);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

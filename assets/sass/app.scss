@@ -1,0 +1,74 @@
+/*!
+  Theme Name: Tact
+  Template URI: https://abctechweb.com
+  Description: Tact | Creative HTML5 Template for Saas, Startup & Agency
+  Author: Abctechweb
+  Author URI: https://abctechweb.com
+  Version: 1.0
+  */
+/*----------------------------------------------------------------
+    [Table of content]
+  ----------------------------------------------------------------
+    01. Template Style
+        1.1 Typography
+        1.2 Sections
+                # about Style
+                # banner Style
+                # Slider Style
+                # Feature Style
+                # Faq Style
+                # video Style
+                # Contact Style
+                # Team Style
+                # Animation Style
+                # What We Do
+                # Who We Are
+                # Work Process
+                # WhY Choose Us
+                # Services Style
+                # Skill Style
+                # Mission Style
+                # Chatbox Style
+                # 404 Style
+                # Experience Style
+                # Testimonial Style
+                # Project Style
+                # Counter Style
+                # Blog Style
+                # Partner Style
+                # Call To Action
+                # Analyze Style
+                # Landing Style
+                # Preloader Style        
+        1.3. Responsive Style
+
+    02. Elements
+        2.1 components
+            # Button Style
+            # Global Style
+        2.2 Helper Classes
+            # Global Class
+            # Margin Padding
+            # Section Spacing
+        2.3 Page Layout
+            2.3.1 Footer
+                # Footer Style
+            2.3.2 Header
+                # Header Style
+                # Topbar Style
+            2.3.3 Pagination
+                # Pagination Style
+            2.3.3 Sidebar
+                # Sidebar Style
+  --------------------------------------------------------------*/
+
+@import "generate/variables";
+@import "generate/mixins";
+@import "template-style/typography";
+@import "template-style/sections";
+@import "elements/components/buttons";
+@import "elements/components/global";
+@import "elements/helper-classes";
+@import "elements/page-layout";
+@import "template-style/responsive";
+

@@ -1,0 +1,565 @@
+/* ------------------------------------
+    Off Canvas Menu
+---------------------------------------*/
+.hamburgernav-nav {
+    width: 60vw;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -61vw;
+    z-index: 9999;
+    padding: 10.5rem;
+    -webkit-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    .contact-social-share {
+        ul{
+            li{
+                display: inline-block;
+                margin-right: rem(10px);
+                a{
+                    color: $title-color;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .tact-contact-info{
+        a{
+            color: $title-color;
+            font-size: rem(16px);
+            i{
+                padding-right: rem(10px);
+            }
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .main-navigation{
+        li{
+            a{
+                color: $title-color;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.hamburgernav-nav ::-webkit-input-placeholder {
+    color: #C1C6C9;
+    opacity: 1;
+}
+
+.hamburgernav-nav :-ms-input-placeholder {
+    color: #C1C6C9;
+    opacity: 1;
+}
+
+.hamburgernav-nav ::-ms-input-placeholder {
+    color: #C1C6C9;
+    opacity: 1;
+}
+
+.hamburgernav-nav ::placeholder {
+    color: #C1C6C9;
+    opacity: 1;
+}
+
+.hamburgernav-nav :-ms-input-placeholder {
+    color: #C1C6C9;
+}
+
+.hamburgernav-nav ::-ms-input-placeholder {
+    color: #C1C6C9;
+}
+
+.hamburgernav-nav.opened {
+    right: 0;
+}
+
+@media (max-width: 1199px) {
+    .hamburgernav-nav {
+        width: 100vw;
+        right: -100vw;
+        padding: 2rem;
+    }
+
+    .hamburgernav-nav.opened {
+        right: 0;
+    }
+}
+
+.hamburgernav-nav__left {
+    right: auto;
+    left: -61vw;
+}
+
+.hamburgernav-nav__left.opened {
+    left: 0;
+}
+
+@media (max-width: 1199px) {
+    .hamburgernav-nav__left {
+        left: -100vw;
+    }
+}
+
+.hamburgernav-nav .hamburgernav-navigation {
+    padding: 0;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.hamburgernav-nav .hamburgernav-navigation li {
+    font-size: 3.6rem;
+    line-height: 5rem;
+    color:  #121213;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    padding: 0;
+    text-align: left;
+}
+
+.hamburgernav-nav .hamburgernav-navigation li a {
+    background: none;
+}
+
+.hamburgernav-nav .hamburgernav-navigation li.hovered {
+    color:  #121213;
+}
+
+.hamburgernav-nav .hamburgernav-navigation li.hover-removed {
+    color: #D3D7DA;
+}
+
+.hamburgernav-nav .hamburgernav-navigation a::before {
+    display: none;
+}
+
+.hamburgernav-nav .hamburgernav-navigation a:hover {
+    color: inherit;
+}
+
+.hamburgernav-nav .hamburgernav-navigation a::after {
+    bottom: -3.5rem;
+}
+
+@media (max-width: 991px) {
+    .hamburgernav-nav .hamburgernav-navigation {
+        visibility: visible;
+        opacity: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hamburgernav-nav .hamburgernav-navigation li {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .hamburgernav-nav .hamburgernav-navigation a {
+        color: inherit;
+    }
+}
+
+@media (max-width: 991px) {
+    .hamburgernav-nav .hamburgernav-navigation li {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.hamburgernav-nav form {
+    margin-bottom: 8rem;
+}
+
+@media (max-width: 991px) {
+    .hamburgernav-nav form {
+        margin-bottom: 4rem;
+    }
+}
+
+.hamburgernav-nav form .input-border {
+    stroke-width: 4px;
+}
+
+@media (max-width: 991px) {
+    .hamburgernav-nav form {
+        font-size: 2rem;
+        bottom: 0.5rem;
+    }
+}
+
+.hamburgernav-nav .hamburgernav-nav-search-btn {
+    position: absolute;
+    right: 0;
+    bottom: 1.8rem;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hamburgernav-nav .hamburgernav-nav-search-btn i {
+    font-size: 2rem;
+    color: #C1C6C9;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+.hamburgernav-nav .hamburgernav-nav-search-btn:hover i {
+    color: $primary-color;
+}
+
+@media (max-width: 767px) {
+    .hamburgernav-nav .hamburgernav-nav-search-btn {
+        bottom: 1rem;
+        right: 2rem;
+    }
+
+    .hamburgernav-nav .hamburgernav-nav-search-btn i {
+        font-size: 1.6rem;
+    }
+}
+
+.hamburgernav-nav input {
+    
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color:  #121213;
+    font-weight: 500;
+    padding: 1.9rem 0;
+    border: none;
+    border-bottom: 2px solid #C1C6C9;
+}
+
+@media (max-width: 767px) {
+    .hamburgernav-nav input {
+        font-size: 1.6rem;
+        padding: 0.9rem 0;
+    }
+}
+
+.hamburgernav-nav .focused input {
+    border-color: $primary-color;
+}
+
+.hamburgernav-nav .form-group.focused .input-txt {
+    -webkit-transform: translateY(6rem);
+    -ms-transform: translateY(6rem);
+    transform: translateY(6rem);
+}
+
+@media (max-width: 767px) {
+    .hamburgernav-nav .form-group.focused .input-txt {
+        -webkit-transform: translateY(4rem);
+        -ms-transform: translateY(4rem);
+        transform: translateY(4rem);
+    }
+}
+
+.navbar-extra-features {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .navbar-extra-features .btn-small {
+        padding: 0.5rem 1rem;
+    }
+}
+.hamburgernav-nav-inner{
+    padding-bottom: 0;
+}
+.close-sidenav {
+    position: absolute;
+    top: rem(20px);
+    right: rem(36px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 100%;
+    padding: 0;
+    cursor: pointer;
+    z-index: 9;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.hamburgernav-nav-opened {
+    position: relative;
+    overflow: hidden;
+    padding-right: 17px;
+}
+.hamburgernav-navigation li {
+    opacity: 0;
+    left: -5rem;
+}
+.hamburgernav-nav-inner {
+    height: 100%;
+    padding: 5rem 1.5rem;
+    overflow-x: hidden;
+}
+.hamburgernav-nav .hamburgernav-nav-search-btn {
+    position: absolute;
+    right: 0;
+    bottom: 1.8rem;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hamburgernav-nav .hamburgernav-nav-search-btn i {
+    font-size: 2rem;
+    color: #c1c6c9;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+.hamburgernav-nav .hamburgernav-nav-search-btn:hover i {
+    color: $primary-color;
+}
+.hamburgernav-nav-search-form .form-group{
+    position: relative;
+    margin-bottom: rem(30px);
+}
+.hamburgernav-nav input {
+    font-family: $primary-color;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: $title-color;
+    font-weight: 500;
+    width: 100%;
+    padding: 1.9rem 0;
+    border: none;
+    border-bottom: 2px solid #c1c6c9;
+}
+
+@media (max-width: 767px) {
+    .hamburgernav-nav input {
+        font-size: 1.6rem;
+        padding: 0.9rem 0;
+    }
+}
+
+.hamburgernav-nav .focused input {
+    border-color: $primary-color;
+}
+
+.hamburgernav-nav .form-group.focused .input-txt {
+    -webkit-transform: translateY(6rem);
+    -ms-transform: translateY(6rem);
+    transform: translateY(6rem);
+}
+
+@media (max-width: 767px) {
+    .hamburgernav-nav .hamburgernav-nav-search-btn {
+        bottom: 1rem;
+        right: 2rem;
+    }
+
+    .hamburgernav-nav .hamburgernav-nav-search-btn i {
+        font-size: 1.6rem;
+    }
+}
+.hamburgernav-nav-opened::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+.close-sidenav div {
+    width: 2rem;
+    height: 0.2rem;
+    background: $title-color;
+}
+.close-sidenav div:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close-sidenav div:nth-of-type(2) {
+    -webkit-transform: rotate(-45deg) translate(1px, -1px);
+    -ms-transform: rotate(-45deg) translate(1px, -1px);
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.close-sidenav:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.hamburgernav-nav-toggler {
+    position: relative;
+    top: rem(3px);
+    display: block;
+}
+
+.hamburgernav-nav-toggler span {
+    position: relative;
+    display: block;
+    width: 1.8rem;
+    height: 0.2rem;
+    background: #6c6b6b;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    z-index: 9;
+    transition: $transition;
+}
+
+.hamburgernav-nav-toggler::after {
+    content: " ";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: #eaeaea;
+    top: 50%;
+    left: 50%;
+    margin: -2rem;
+    border-radius: 100%;
+    transition: $transition;
+}
+.hamburgernav-nav-toggler:hover:after{
+    background: $primary-color;
+}
+.hamburgernav-nav-toggler:hover span{
+    background: #fff;
+}
+
+.hamburgernav-nav-toggler:hover span {
+    -webkit-animation: menu-toggler-anim 0.2s ease-in-out 0s forwards;
+    animation: menu-toggler-anim 0.2s ease-in-out 0s forwards;
+}
+
+.hamburgernav-nav-toggler:hover span:nth-of-type(2) {
+    -webkit-animation: menu-toggler-anim 0.2s ease-in-out 0.05s forwards;
+    animation: menu-toggler-anim 0.2s ease-in-out 0.05s forwards;
+}
+
+.hamburgernav-nav-toggler:hover span:nth-of-type(3) {
+    -webkit-animation: menu-toggler-anim 0.2s ease-in-out 0.1s forwards;
+    animation: menu-toggler-anim 0.2s ease-in-out 0.1s forwards;
+}
+
+.hamburgernav-nav-toggler:hover::after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.nav-item-list{
+     
+            .menu-toggle-right{
+                ul.sub-menu.opened{
+                    span.em-menu-parent{
+                         color: $primary-color;
+                         i{
+                            color: $primary-color;
+                         }                       
+                    }
+                }
+                ul.sub-menu{
+                    padding-left: 10px;
+                    padding-bottom: 20px;
+                    li{
+                        color: #111;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        a{                        
+                            color: #111;
+                                 &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                }
+            li.sub-menu-toggle span.em-menu-parent {
+                  
+                    border:0;
+                    cursor: pointer;
+                    display: block;
+                    line-height: 1.5rem;
+                    padding: 1.3rem;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+            }          
+            .menu-toggle-left{
+
+                ul.sub-menu{
+                    padding-left: 10px;
+                    padding-bottom: 20px;
+                    li{
+                        color: #111;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        a{                        
+                            color: #111;
+                                 &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                }
+                li.sub-menu-toggle span.em-menu-parent {
+                     border:0;
+                            cursor: pointer;
+                            display: block;
+                            line-height: 1.5rem;
+                            padding: 1.3rem;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                }
+
+            }
+         }
+
+    .menu-toggle-right ul.sub-menu {
+        display: none;
+    }
+    .menu-toggle-right .sub-menu.show {
+        display: block;
+    }
+    .menu-toggle-left ul.sub-menu {
+        display: none;
+    }
+    .menu-toggle-left .sub-menu.show {
+        display: block;
+    }

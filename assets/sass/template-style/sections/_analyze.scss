@@ -1,0 +1,10 @@
+.analyze-section{
+    padding-bottom: $section_padding_base_md;
+    .section-title{
+        &.title-style2 {
+            .title{
+                margin-bottom: rem(20px);
+            }
+        }
+    }
+}

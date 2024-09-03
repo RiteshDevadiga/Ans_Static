@@ -1,0 +1,25 @@
+.partner-section{
+    padding-bottom: 6.7rem;
+    &.partner-layout2{
+    	padding-bottom: 6.7rem;
+    }
+    &.partner-layout3{
+    	padding-top: rem(73px);
+    	padding-bottom: rem(65px);
+    }
+    .display-table{
+        height: rem(130px);
+        img{
+            max-height: rem(32px);
+        }
+    }
+    .partner-item{
+        text-align: center;
+        .display-table{
+            width: 100%;
+        }
+        a{
+            display: inline-block;
+        }
+    }
+}

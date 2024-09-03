@@ -1,0 +1,20 @@
+.header {
+    &.header-layout4{
+        .main-menu-area {
+            .two-icons {
+                li.search {
+                    .seach_bar {
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .main-menu-area{
+            &.sticky{
+                background: #161618;
+            }
+        }
+    }   
+}

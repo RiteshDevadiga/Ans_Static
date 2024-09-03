@@ -1,0 +1,94 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 18/10/2019 05:27
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./fonts/Flaticon.eot");
+  src: url("./fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/Flaticon.woff2") format("woff2"),
+       url("./fonts/Flaticon.woff") format("woff"),
+       url("./fonts/Flaticon.ttf") format("truetype"),
+       url("./fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-analysis:before { content: "\f100"; }
+.flaticon-left-quote:before { content: "\f101"; }
+.flaticon-paper-plane:before { content: "\f102"; }
+.flaticon-location:before { content: "\f103"; }
+.flaticon-contact:before { content: "\f104"; }
+.flaticon-paper-plane-1:before { content: "\f105"; }
+.flaticon-magnifying-glass:before { content: "\f106"; }
+.flaticon-search:before { content: "\f107"; }
+.flaticon-left-quote-1:before { content: "\f108"; }
+.flaticon-business-and-finance:before { content: "\f109"; }
+.flaticon-fluctuation:before { content: "\f10a"; }
+.flaticon-search-1:before { content: "\f10b"; }
+.flaticon-next:before { content: "\f10c"; }
+.flaticon-chart:before { content: "\f10d"; }
+.flaticon-level:before { content: "\f10e"; }
+.flaticon-development:before { content: "\f10f"; }
+.flaticon-speed:before { content: "\f110"; }
+.flaticon-speaker:before { content: "\f111"; }
+.flaticon-shield:before { content: "\f112"; }
+.flaticon-design:before { content: "\f113"; }
+.flaticon-bell:before { content: "\f114"; }
+.flaticon-tie:before { content: "\f115"; }
+.flaticon-back:before { content: "\f116"; }
+.flaticon-send:before { content: "\f117"; }
+.flaticon-next-1:before { content: "\f118"; }
+.flaticon-rate:before { content: "\f119"; }
+.flaticon-project:before { content: "\f11a"; }
+.flaticon-team:before { content: "\f11b"; }
+.flaticon-career:before { content: "\f11c"; }
+.flaticon-team-1:before { content: "\f11d"; }
+.flaticon-wage:before { content: "\f11e"; }
+.flaticon-sketch:before { content: "\f11f"; }
+.flaticon-pen:before { content: "\f120"; }
+.flaticon-planet:before { content: "\f121"; }
+.flaticon-shout:before { content: "\f122"; }
+.flaticon-menu:before { content: "\f123"; }
+.flaticon-phone:before { content: "\f124"; }
+.flaticon-search-2:before { content: "\f125"; }
+.flaticon-graph:before { content: "\f126"; }
+.flaticon-ruler:before { content: "\f127"; }
+.flaticon-shield-1:before { content: "\f128"; }
+.flaticon-gear:before { content: "\f129"; }
+.flaticon-diamond:before { content: "\f12a"; }
+.flaticon-lock:before { content: "\f12b"; }
+.flaticon-money:before { content: "\f12c"; }
+.flaticon-architecture-and-city:before { content: "\f12d"; }
+.flaticon-plus:before { content: "\f12e"; }
+.flaticon-minus:before { content: "\f12f"; }
+.flaticon-right:before { content: "\f130"; }
+.flaticon-seo:before { content: "\f131"; }
+.flaticon-line-chart:before { content: "\f132"; }
+.flaticon-data:before { content: "\f133"; }
+.flaticon-tick:before { content: "\f134"; }
+.flaticon-correct:before { content: "\f135"; }
+.flaticon-success:before { content: "\f136"; }
+.flaticon-chart-pie:before { content: "\f137"; }
+.flaticon-chart-1:before { content: "\f138"; }
+.flaticon-pencil:before { content: "\f139"; }
+.flaticon-quote:before { content: "\f13a"; }
+.flaticon-phone-call:before { content: "\f13b"; }
+.flaticon-envelope:before { content: "\f13c"; }
+.flaticon-location-pin:before { content: "\f13d"; }
