@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form fields value
+    // Get the form fields value yflb kgab eswu qghx
     $name = trim($_POST["first-name"]);
     $phone = trim($_POST["phone"]);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Set a 500 (internal server error) response code.
         http_response_code(500);
+        error_log("Mail failed to send to $recipient"); // Logs error to the server log
         echo "Oops! Something went wrong and we couldn't send your message.";
     }
 } else {
